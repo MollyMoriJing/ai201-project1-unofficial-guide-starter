@@ -1,0 +1,23 @@
+PROFESSOR: Benjamin Hescott
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2365410
+OVERALL QUALITY: 4.3/5 (11 ratings)
+WOULD TAKE AGAIN: 73%
+DIFFICULTY: 3.8/5
+COURSES MENTIONED: CS1800 (Discrete Structures), CS2810 (Mathematics of Data Models), CS3800 (Theory of Computation)
+
+REVIEW | Course: CS2810 | Date: 2024-04-12 | Quality: 5.0 | Difficulty: 4.0 | Grade: A+ | Would take again: Yes | Tags: Inspirational, Caring, Helpful
+Professor Hescott has been my favorite instructor I have had during my time at Northeastern. He is super caring and makes concepts fun and enjoyable to learn about. He can be a bit slow to post code and notes to canvas but the pros so far outweigh the cons in my opinion.
+
+REVIEW | Course: CS3800 | Date: 2022-12-02 | Quality: 3.0 | Difficulty: 4.0 | Grade: B | Tags: Caring, Lecture heavy
+Prof. Hescott is an amazing person but not the greatest lecturer in my opinion. At least for this class (Theory of Computation), lecture notes were always very late to be posted on Canvas, homework/quiz/test grades were always late to come back, and Piazza questions were left unanswered for multiple days. I'd take Prof. Walters instead.
+
+REVIEW | Course: CS1800 | Date: 2022-01-19 | Quality: 2.0 | Difficulty: 4.0 | Grade: A | Would take again: No
+Had him for CS1800 online lectures. He is an awful explainer and he singlehandedly discouraged me from ever taking a theory-based computer/data science class ever again. God forbid he actually teaches students how to do induction.
+
+REVIEW | Course: CS2810 | Date: 2021-12-09 | Quality: 5.0 | Difficulty: 3.0 | Grade: A | Would take again: Yes | Tags: Accessible outside class, Inspirational, Amazing lectures
+Professor Hescott is passionate about what he teaches. His lectures were fun and engaging. The projects in this course were a lot of fun. One of the best Professors I have had at Northeastern.
+
+REVIEW | Course: CS1800 | Date: 2020-12-19 | Quality: 3.0 | Difficulty: 4.0 | Grade: B+ | Would take again: No
+Professor Hescott is a good lecturer but his lectures are very simplified versions of the homework for Discrete Structures so often times you need to work with peers, go to office hours and tutoring sessions in order to understand the homework. In the first half of this class the work is relatively easy but it does increase in difficulty.

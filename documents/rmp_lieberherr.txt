@@ -1,0 +1,20 @@
+PROFESSOR: Karl Lieberherr
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/430930
+OVERALL QUALITY: 2.4/5 (41 ratings)
+WOULD TAKE AGAIN: 27%
+DIFFICULTY: 4.0/5
+COURSES MENTIONED: CS1100, CS1101 (introductory computing; Excel / LAMBDA, AI-assisted instruction)
+
+REVIEW | Course: CS1101 | Date: 2026-04-28 | Quality: 1.0 | Difficulty: 4.0 | Grade: A | Would take again: No | Tags: Tough grader, Group projects, Test heavy
+RUN. taught by claude, assignments and tests written by claude, probably graded by claude. makeup exams are nice and saved my grade, LONG learning curve to get to an A; thought i was going to have to withdraw. sorry econ and other cssh students, he expects existing calc and cs experience; good luck.
+
+REVIEW | Course: CS1101 | Date: 2026-04-26 | Quality: 1.0 | Difficulty: 4.0 | Grade: A | Would take again: No | Tags: Lots of homework
+Have to learn all material outside of class on your own time. He told us we were overly reliant on AI when AI use was required on homework. Assignments take 7+ hours. I should end with an A, only thanks to retakes and lots of extra credit. If you want a good grade, prepare to be overworked. The A cannot make up for the emotional toll.
+
+REVIEW | Course: CS1100 | Date: 2026-03-28 | Quality: 1.0 | Difficulty: 5.0 | Would take again: No | Tags: Tough grader, Lots of homework, Online Savvy
+Probably the worst professor at Northeastern. You cannot understand what he is saying most of the time. The TAs are not helpful and take days to respond to even the most basic questions. Exam averages were around a 50, and weekly assignments take hours to complete. Avoid this class.
+
+REVIEW | Course: CS1101 | Date: 2026-02-19 | Quality: 1.0 | Difficulty: 4.0 | Grade: Incomplete | Would take again: No | Tags: Lots of homework
+Pros: - Lots of time spent in Excel, great for experience - LAMBDA knowledge definitely sets you apart from most users. Cons: - Weekly assignments always a number 1 priority (shortest one took me 6 hours.) - Instructions for these assignments are super unclear - TA help isn't great - Huge over-reliance on AI teaching - First few weeks are brutal.

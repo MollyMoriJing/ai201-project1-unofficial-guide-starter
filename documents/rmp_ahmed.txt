@@ -1,0 +1,23 @@
+PROFESSOR: Amal Ahmed
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/1626525
+OVERALL QUALITY: 4.0/5 (10 ratings)
+WOULD TAKE AGAIN: 72%
+DIFFICULTY: 3.5/5
+COURSES MENTIONED: CS2500 (Fundamentals of Computer Science 1 / "Fundies 1")
+
+REVIEW | Course: CS2500 | Date: 2026-04-29 | Quality: 1.0 | Difficulty: 5.0 | Would take again: No
+The professor was extremely harsh.
+
+REVIEW | Course: CS2500 | Date: 2021-01-18 | Quality: 5.0 | Difficulty: 4.0 | Grade: A | Would take again: Yes | Tags: Lots of homework, Skip class? You won't pass, Group projects
+I really enjoyed Amal's class. She was chill and very patient. Her class was very interesting. You have to pay attention to lectures and work hard on homework to receive good grades.
+
+REVIEW | Course: CS2500 | Date: 2020-12-21 | Quality: 4.0 | Difficulty: 3.0 | Grade: B | Would take again: Yes | Tags: Accessible outside class, Inspirational, Tough grader
+I loved Amal! She was super passionate about the material. Her lectures did get a little boring near the end of the semester, but that was more of me being burnt out. If you want a good grade, make sure you show up to lectures. The homework got REALLY tough near the end of the year, but if you stick with it you'll do fine.
+
+REVIEW | Course: CS2500 | Date: 2020-12-04 | Quality: 5.0 | Difficulty: 3.0 | Would take again: Yes
+As long as you go to lecture and pay attention you'll be fine. She's super into what she teaches and gets really excited about new material so the lectures are never really boring.
+
+REVIEW | Course: CS2500 | Date: 2020-05-02 | Quality: 5.0 | Difficulty: 3.0 | Grade: A | Would take again: Yes | Tags: Lots of homework, Clear grading criteria, Caring
+As mentioned by the other reviewers, it's not required to go to lectures, but if you choose to skip on lectures, you'll need to read the textbook. I never touched the textbook and entirely went to lectures. The homework is tough but doable and very rewarding. Overall, she's an engaging lecturer so pay attention and you'll be fine.

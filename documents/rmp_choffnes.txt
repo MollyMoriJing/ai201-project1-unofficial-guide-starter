@@ -1,0 +1,23 @@
+PROFESSOR: David Choffnes
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2219053
+OVERALL QUALITY: 4.5/5 (8 ratings)
+WOULD TAKE AGAIN: 75%
+DIFFICULTY: 4.3/5
+COURSES MENTIONED: CS3700, CS4700, CS5700 (Computer Networking / Networks and Distributed Systems)
+
+REVIEW | Course: CS4700 | Date: 2026-03-16 | Quality: 3.0 | Difficulty: 5.0 | Tags: Tough grader, Lots of homework, Lecture heavy
+Prof. Choffnes is an expert lecturer with deep knowledge of the material. However, the course workload is extremely high for an intro class. The syllabus is very ambitious, covering a vast amount of content that can be difficult to balance with other courses. It is a highly educational experience, but expect a very rigorous pace and grading.
+
+REVIEW | Course: CS5700 | Date: 2022-12-21 | Quality: 5.0 | Difficulty: 5.0 | Grade: A- | Would take again: Yes | Tags: Get ready to read, Extra credit, Group projects
+Prof David is very passionate about Networking, the second half of his lectures are gold mines and will make you love networking, he gave some opportunity for extra credits and he is very accommodating, but project 3/4 needs infrastructure help from college, I really loved his classes, although i messed my finals still ended in decent grades
+
+REVIEW | Course: CS5700 | Date: 2022-03-30 | Quality: 5.0 | Difficulty: 4.0 | Would take again: Yes | Tags: Extra credit, Group projects, Gives good feedback
+David is a nice guy! He knows a lot in his field and is always enthusiastic in class. As long as you fulfill the requirement (code run and get the result) you get whole grade. However the extra credit is challenging. Each assignment takes 1-2 days to finish (3-4 day if you are not familiar with tools) therefore the load is fair.
+
+REVIEW | Course: CS5700 | Date: 2018-01-16 | Quality: 4.0 | Difficulty: 5.0 | Grade: B- | Would take again: No | Tags: Get ready to read, Lots of homework, So many papers
+This is one of the hardest classes I've ever taken, but I did learned a lot about networks. Projects are well designed, exams are quite challenging. Prof. Choffnes is a great lecturer.
+
+REVIEW | Course: CS3700 | Date: 2017-12-19 | Quality: 5.0 | Difficulty: 3.0 | Grade: A | Would take again: Yes | Tags: Respected, Group projects, Would take again
+Class isn't too bad if you are willing to put in the work. Start the group projects early because they count for the majority of the grade. You get a notesheet for the exams which is very helpful. Don't skip lecture, he crams 2 lectures worth of info into each powerpoint. Textbook is not required but I found it very helpful (free online).

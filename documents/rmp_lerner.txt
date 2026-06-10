@@ -1,0 +1,23 @@
+PROFESSOR: Benjamin Lerner
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2034405
+OVERALL QUALITY: 3.6/5 (90 ratings)
+WOULD TAKE AGAIN: 61%
+DIFFICULTY: 4.3/5
+COURSES MENTIONED: CS2500 (Fundamentals of Computer Science 1 / "Fundies 1"), CS2510 (Fundies 2), CS4410 (Compilers)
+
+REVIEW | Course: CS2500 | Date: 2025-02-11 | Quality: 5.0 | Difficulty: 5.0 | Would take again: Yes
+Hardest class I've ever taken. But best prof ever
+
+REVIEW | Course: CS4410 | Date: 2025-02-11 | Quality: 5.0 | Difficulty: 5.0 | Would take again: Yes | Tags: Mandatory Attendance
+Best prof ever hands down
+
+REVIEW | Course: CS2500 | Date: 2025-01-08 | Quality: 5.0 | Difficulty: 4.0 | Grade: A- | Would take again: Yes | Tags: Amazing lectures, Lots of homework, Accessible outside class
+I took the accelerated section and learned a lot in this class! If you have either a good amount of programming experience or the desire to be challenged I really recommend taking this course. Wasn't easy or anything, but wasn't irrationally difficult. Helpful TAs and the one time I went to his office hours he was extremely friendly and helpful.
+
+REVIEW | Course: CS2510 | Date: 2025-01-07 | Quality: 5.0 | Difficulty: 4.0 | Grade: A | Would take again: Yes | Tags: Clear grading criteria, Lots of homework, Accessible outside class
+Great professor! He is very knowledgeable and excellent at communicating the intuition and basis for difficult concepts! He does expect students to put in a lot of effort, but IMO it is worth it
+
+REVIEW | Course: CS2510 | Date: 2024-11-26 | Quality: 5.0 | Difficulty: 4.0 | Grade: A- | Would take again: Yes | Tags: Extra credit, Amazing lectures, Inspirational
+Took the accelerated section with him. Tough grader, but really pushes his students to become better programmers. His lectures and materials really shows that he cares about what he's teaching.

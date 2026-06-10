@@ -1,0 +1,23 @@
+PROFESSOR: Nathaniel Derbinsky
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2308643
+OVERALL QUALITY: 4.8/5 (31 ratings)
+WOULD TAKE AGAIN: 97%
+DIFFICULTY: 3.1/5
+COURSES MENTIONED: CS2500 (Fundamentals of Computer Science 1 / "Fundies 1"), CS2100
+
+REVIEW | Course: CS2500 | Date: 2026-04-26 | Quality: 5.0 | Difficulty: 2.0 | Grade: A+ | Would take again: Yes | Tags: Extra credit, Clear grading criteria, Lots of homework
+(CS2100) Live by the pawtograder, die by the pawtograder. You get three chances on each quiz, and if you keep your lab average and homework average up, it's an easy A/B. Especially if you've coded before, in that case the class is brain dead easy and you'll never have to even show up.
+
+REVIEW | Course: CS2500 | Date: 2026-04-17 | Quality: 5.0 | Difficulty: 3.0 | Grade: A | Would take again: Yes | Tags: Extra credit, Accessible outside class
+He's a king. Always responds fast to emails, clearly cares about student and is so helpful. Just king.
+
+REVIEW | Course: CS2500 | Date: 2024-04-12 | Quality: 5.0 | Difficulty: 3.0 | Grade: A | Would take again: Yes | Tags: Amazing lectures, Caring, Accessible outside class
+Derbinsky goated. Engaging, funny lectures. Knows how to explain complex topics like functional programming to CS beginners. Made lots of time for office hours and seemed to genuinely care about everybody's success. Quick to grade and explain feedback. Best introduction to CS I could have asked for.
+
+REVIEW | Course: CS2500 | Date: 2024-03-20 | Quality: 5.0 | Difficulty: 3.0 | Grade: A- | Would take again: Yes | Tags: Gives good feedback, Caring, Accessible outside class
+Derbinsky is awesome!! I took Fundies I as a non-CS major with very little prior programming knowledge, and while the course is definitely challenging, he made it such a positive experience I could succeed in. He is an engaging lecturer, very knowledgeable, and so genuinely caring for his students (def go to office hrs!) Would highly recommend him!
+
+REVIEW | Course: CS2500 | Date: 2023-10-18 | Quality: 5.0 | Difficulty: 4.0 | Grade: A | Would take again: Yes | Tags: Amazing lectures, Inspirational, Respected
+Derbinsky was one of the most impactful professors I've had at Northeastern. He is very understanding and knows how to break difficult topics into more simple concepts.

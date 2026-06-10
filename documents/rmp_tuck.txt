@@ -1,0 +1,23 @@
+PROFESSOR: Nathaniel Tuck
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2044282
+OVERALL QUALITY: 3.3/5 (20 ratings)
+WOULD TAKE AGAIN: 47%
+DIFFICULTY: 3.8/5
+COURSES MENTIONED: CS3650 (Computer Systems), CS5335 (Robotics Science and Systems)
+
+REVIEW | Course: CS3650 | Date: 2021-03-28 | Quality: 4.0 | Difficulty: 5.0 | Would take again: Yes | Tags: Lots of homework, Skip class? You won't pass, Lecture heavy
+Nat (usually) boils his lectures down to the very core: if you listen, you will learn exactly what you need to succeed at the homeworks. The challenges are tough because he doesn't give you the step-by-step like he does for the HW, but they are also completely reasonable given the info you learn from the lectures. Just don't make bad jokes in chat
+
+REVIEW | Course: CS3650 | Date: 2021-03-22 | Quality: 1.0 | Difficulty: 5.0 | Would take again: No | Tags: Lots of homework, Skip class? You won't pass, Tough grader
+Tuck is completely unwilling to explain concepts from scratch, often rambling for an hour and a half about a concept he never even defined. No room for questions, is super unhelpful and just tells people to look at the notes if they're confused, and expects everyone to be on the same page as him. He does not care, do not take it with him if you can
+
+REVIEW | Course: CS3650 | Date: 2020-12-02 | Quality: 2.0 | Difficulty: 5.0 | Grade: B | Would take again: No
+Not the absolute worst experience I've had in a class at Northeastern, but that's about the kindest thing I have to say. I took computer systems with him and it was extremely difficult, as if the course is made to give you no help at all.
+
+REVIEW | Course: CS5335 | Date: 2020-11-30 | Quality: 1.0 | Difficulty: 5.0 | Grade: A | Would take again: No | Tags: Lots of homework, Group projects, Extra credit
+Homeworks take well over 20 hours (sometimes 30-40) and range in topics from orbital mechanics to computer vision. I definitely learned a ton, but the cost was lots of sleepless nights and a near constant stress. Fwiw, I've heard that he's usually much better prepared, but this class was awful. Don't take robotics with him.
+
+REVIEW | Course: CS5335 | Date: 2020-11-25 | Quality: 5.0 | Difficulty: 4.0 | Would take again: Yes | Tags: Respected, Clear grading criteria, Extra credit
+I took CS5335 under Professor Nat Tuck. Although the course for a rough ride because of the ongoing pandemic, but Professor Nat tuck handled in an awesome way. Learning robotics in an online environment is always difficult, but the assignment were amazing and helped learn orbital mechanics which is something new and mostly skipped in basic robotics

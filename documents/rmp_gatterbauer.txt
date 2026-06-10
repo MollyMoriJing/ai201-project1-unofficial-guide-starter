@@ -1,0 +1,23 @@
+PROFESSOR: Wolfgang Gatterbauer
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2303072
+OVERALL QUALITY: 2.6/5 (19 ratings)
+WOULD TAKE AGAIN: 37%
+DIFFICULTY: 4.0/5
+COURSES MENTIONED: CS3200 (Database Design)
+
+REVIEW | Course: CS3200 | Date: 2025-04-30 | Quality: 5.0 | Difficulty: 1.0 | Grade: A | Would take again: Yes | Tags: Participation matters, Clear grading criteria, Gives good feedback
+I really enjoyed this class and thought Wolfgang was a decent teacher. I highly recommend reading the textbook and doing practice in it as I did that and I think thats why I thought the class was super easy while it seems like a lot of people thought it was hard. Would be nice if we learned a little about actually using a database in bigger projects.
+
+REVIEW | Course: CS3200 | Date: 2025-04-29 | Quality: 5.0 | Difficulty: 1.0 | Grade: A | Would take again: Yes | Tags: Group projects, Hilarious, Accessible outside class
+Great professor. Extremely intuitive to follow and everything in the course builds off of the intuition he lays out for you. If you want an easy A I highly recommend, if you want a harder course that you may learn more in take Mark Fontenot (something like that). Cutoff for an A was only a 73 so if you put in some effort it is yours.
+
+REVIEW | Course: CS3200 | Date: 2025-04-28 | Quality: 5.0 | Difficulty: 2.0 | Grade: A | Would take again: Yes | Tags: Inspirational, Caring, Accessible outside class
+Fantastic professor. Lectures are very interesting and easy to follow. Not a lot of homework and course is capped with a group project which is fun but too simple and you don't gain a lot of knowledge from it. Tests are kind of hard but it's graded on a very heavy curve so it's easy to do well on them. People rating him low just didn't go to class.
+
+REVIEW | Course: CS3200 | Date: 2025-04-27 | Quality: 1.0 | Difficulty: 5.0 | Would take again: No
+very unclear what the final would even be on as he neglected to answer piazza in a timely manner for a 3 day timespan before the final. I am telling anyone reading this right now do not take this guy. I dont care if this is your only section take a different class. Do not take this guy.
+
+REVIEW | Course: CS3200 | Date: 2025-04-27 | Quality: 1.0 | Difficulty: 5.0 | Would take again: No | Tags: Tough grader, Test heavy, Graded by few things
+Actually awful and the worst experience I've had at northeastern. All my professors have been great but he by far is the worst of all and doesnt even compare to my worst before that. I would rather take a Graduate course than this. Lied about exam length, project grading rubric magically changes based on group size despite that never being stated.

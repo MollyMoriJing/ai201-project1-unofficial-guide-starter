@@ -1,0 +1,23 @@
+PROFESSOR: Mark Fontenot
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/2868024
+OVERALL QUALITY: 2.8/5 (88 ratings)
+WOULD TAKE AGAIN: 49%
+DIFFICULTY: 3.2/5
+COURSES MENTIONED: CS3200 (Database Design)
+
+REVIEW | Course: CS3200 | Date: 2026-05-01 | Quality: 5.0 | Difficulty: 3.0 | Grade: A- | Would take again: Yes | Tags: Extra credit, Group projects
+Dr. Fontenot is a great professor from my experience! No final exam. The two midterms fairly reflect the material (you can use a cheat sheet too). Lectures are engaging. Attendance isnt required but random days he'll take attendance for extra credit. Early homework submission gets you extra credit. Group project is heavy so choose ur group wisely!
+
+REVIEW | Course: CS3200 | Date: 2026-04-27 | Quality: 3.0 | Difficulty: 1.0 | Grade: A | Would take again: Yes | Tags: Extra credit, Group projects
+Easy class until the final project
+
+REVIEW | Course: CS3200 | Date: 2026-04-25 | Quality: 4.0 | Difficulty: 2.0 | Grade: A | Would take again: Yes | Tags: Extra credit, Group projects
+Class is free until the group project. Hws usually took 20 min and the slides for a 1 hr lecture could be read and understood in 10-15 min. Does not answer questions and ghosted someone on slack asking abt the final project
+
+REVIEW | Course: CS3200 | Date: 2026-04-25 | Quality: 1.0 | Difficulty: 3.0 | Grade: A-
+Take the online section. The course content is extremely relevant, but he comes off unapproachable which reflects in the lack of participation in class. Its a bit frustrating with the side comments, ends class 30 minute early, & often breezes through the lectures. Head TA's are helpful, but the quality with other TA's is often a miss.
+
+REVIEW | Course: CS3200 | Date: 2026-04-21 | Quality: 1.0 | Difficulty: 4.0 | Grade: A- | Tags: Tough grader
+The homework for this class is fairly time consuming and does not really help with the exams. The exams are difficult but doable with studying and your allowed 1/2 sheet of notes. 0 late submissions and the professor is fairly rude and does not appreciate questions. The final project is given very late and is time consuming so be prepared for it.

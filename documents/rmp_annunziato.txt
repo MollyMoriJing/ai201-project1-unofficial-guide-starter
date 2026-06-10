@@ -1,0 +1,23 @@
+PROFESSOR: Jose Annunziato
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/1980304
+OVERALL QUALITY: 4.0/5 (40 ratings)
+WOULD TAKE AGAIN: 77%
+DIFFICULTY: 2.8/5
+COURSES MENTIONED: CS4550 (Web Development)
+
+REVIEW | Course: CS4550 | Date: 2026-04-25 | Quality: 5.0 | Difficulty: 3.0 | Grade: A | Would take again: Yes | Tags: Lots of homework, Accessible outside class, Online Savvy
+This class like every other is what you make of it, while its a little outdated and can be annoying to copy and paste code if you do the work it tells you to do and actually do the course work you can learn a lot from this class. Professor allows TA's to accept late work for full credit year round, which makes this class manageable.
+
+REVIEW | Course: CS4550 | Date: 2026-04-20 | Quality: 2.0 | Difficulty: 1.0 | Grade: A | Would take again: No
+Didn't learn much. Just got good at copying and pasting code. Easy A tho.
+
+REVIEW | Course: CS4550 | Date: 2026-01-09 | Quality: 1.0 | Difficulty: 3.0 | Grade: A | Would take again: No | Tags: Lots of homework
+The homework relies on copying outdated TypeScript code from a google doc that often causes errors and requires ignoring best practices to follow. Components are sometimes misnamed, making it unclear where the code belongs. Since each assignment builds on the last, these issues accumulate and create confusion in the final codebase.
+
+REVIEW | Course: CS4550 | Date: 2025-01-11 | Quality: 5.0 | Difficulty: 3.0 | Grade: A- | Would take again: Yes
+Very Chill Professor, He accepts late assignments however there are a lot of work
+
+REVIEW | Course: CS4550 | Date: 2024-12-05 | Quality: 1.0 | Difficulty: 3.0 | Grade: B | Would take again: No | Tags: Get ready to read, Group projects
+One of the worst organized classes I've ever taken. Professor leaves Piazza posts unanswered, lectures are just doing the HW, and HW is copy-pasting buggy code. I have learned nothing from this course. Last 3 assignments were buggy for most ppl, so we're forced to go to office hours with ridiculous wait times for grades. Don't waste your time!!

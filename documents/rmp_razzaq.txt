@@ -1,0 +1,23 @@
+PROFESSOR: Leena Razzaq
+SCHOOL: Northeastern University (Khoury College of Computer Sciences)
+DEPARTMENT: Computer Science
+SOURCE: RateMyProfessors — https://www.ratemyprofessors.com/professor/1682644
+OVERALL QUALITY: 2.7/5 (127 ratings)
+WOULD TAKE AGAIN: 30%
+DIFFICULTY: 3.7/5
+COURSES MENTIONED: CS2000, CS2100 (introductory computer science)
+
+REVIEW | Course: CS2000 | Date: 2026-02-05 | Quality: 1.0 | Difficulty: 4.0 | Grade: A | Would take again: No | Tags: Lots of homework, So many papers, Test heavy
+The worst professor possible, she doesn't know what the course is. She asks you to do geography things in a coding class. She should understand a coding class doesn't require someone to go on google maps and analyze if the areas are vacant. Never take her class if you actually care about what you study.
+
+REVIEW | Course: CS2100 | Date: 2026-01-24 | Quality: 2.0 | Difficulty: 2.0 | Grade: A | Would take again: No | Tags: Extra credit, Clear grading criteria, Lecture heavy
+Prof was clearly not very knowledgeable, just read off slides and had difficulty answering questions. Homeworks weren't too bad, quizzes were easy if you just make sure you can do the practice quizzes. Attendance can't hurt but can help.
+
+REVIEW | Course: CS2100 | Date: 2025-12-14 | Quality: 5.0 | Difficulty: 3.0 | Grade: A- | Would take again: Yes | Tags: Participation matters, Lots of homework, Caring
+I feel like I learned a lot in this course. The assignments were interesting and there was even one about bias in RMP. Makes you think ...
+
+REVIEW | Course: CS2100 | Date: 2025-12-12 | Quality: 4.0 | Difficulty: 1.0 | Grade: A | Would take again: Yes | Tags: Clear grading criteria, Caring, Accessible outside class
+As some others have noted, Leena is definitely an over-hated professor. Her lectures are typically reasonable/understandable, but sometimes she'll take a moment to "explain" something in depth, and it might not be logical or easy to follow. Most of the problems in this class were due to the autograder--something that she has no control over.
+
+REVIEW | Course: CS2100 | Date: 2025-12-10 | Quality: 4.0 | Difficulty: 2.0 | Grade: A | Would take again: Yes | Tags: Caring
+Definitely agree that Prof. Razzaq is over-hated. She is not the greatest professor, but she does care and can answer questions about the material. I will cut her some slack about not being able to answer some questions about the autograder because it is literally the first time this class is being taught; that is not her fault. A kind professor.
