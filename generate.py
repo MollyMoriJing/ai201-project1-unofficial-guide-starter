@@ -112,6 +112,43 @@ def ask(question: str, k: int = 5, use_hybrid: bool = False, where: dict | None 
     return {"answer": answer, "sources": sources, "chunks": chunks}
 
 
+def _condense_question(question: str, history: list[tuple[str, str]]) -> str:
+    """Rewrite a follow-up into a standalone question using prior turns (memory).
+
+    Without this, a follow-up like "Is his workload heavy?" has no professor name,
+    so retrieval can't find the right chunks.
+    """
+    if not history:
+        return question
+    convo = "\n".join(f"User: {q}\nAssistant: {a}" for q, a in history[-3:])
+    prompt = (
+        "Rewrite the user's follow-up into ONE standalone question that makes sense without the "
+        "conversation — resolve pronouns/references ('his', 'that professor', 'that class') to the "
+        "actual professor or course named earlier. Output ONLY the rewritten question, nothing else.\n\n"
+        f"Conversation so far:\n{convo}\n\nFollow-up: {question}\nStandalone question:"
+    )
+    resp = _client().chat.completions.create(
+        model=MODEL, temperature=0, max_tokens=60,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return resp.choices[0].message.content.strip().strip('"')
+
+
+def ask_chat(question: str, history: list[tuple[str, str]] | None = None,
+             k: int = 5, use_hybrid: bool = False) -> dict:
+    """Conversational ask (stretch: memory). Resolves a follow-up against the
+    conversation history, then answers it grounded in retrieved reviews.
+
+    history: list of (user_question, assistant_answer) tuples from earlier turns.
+    Returns the usual dict plus 'standalone_question' (the rewritten query used).
+    """
+    history = history or []
+    standalone = _condense_question(question, history)
+    result = ask(standalone, k=k, use_hybrid=use_hybrid)
+    result["standalone_question"] = standalone
+    return result
+
+
 if __name__ == "__main__":
     import sys
 

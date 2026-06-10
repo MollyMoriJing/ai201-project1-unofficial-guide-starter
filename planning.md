@@ -213,4 +213,7 @@ _(Update this section before starting any stretch feature.)_
 - **Metadata Filtering (+1) — done (2026-06-10):** `retrieve(query, where=...)` / `ask(where=...)` accept
   a ChromaDB metadata filter (professor / quality / chunk_type); the Gradio UI exposes an "All / positive
   ≥4 / critical ≤2" rating filter. README shows the same query returning different chunks per filter.
-- Other candidate not done: conversational memory.
+- **Conversational Memory (+1) — done (2026-06-10):** `ask_chat(question, history)` rewrites a
+  context-dependent follow-up into a standalone question (LLM condense step) before retrieval, so "his
+  workload" resolves to the professor named earlier. Demo: `chat.py` (CLI) and `chat_app.py` (Gradio chat).
+- **All four stretch features done → +5 bonus (capped).**

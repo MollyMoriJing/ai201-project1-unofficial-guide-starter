@@ -434,10 +434,40 @@ path, where ChromaDB applies the `where` clause natively.)
 
 ---
 
+## Stretch: Conversational Memory (+1)
+
+Multi-turn follow-ups are resolved *before* retrieval: `ask_chat(question, history)` (in `generate.py`)
+uses the LLM to rewrite a context-dependent follow-up into a standalone question, so a pronoun like
+"his" still retrieves the right professor. `chat.py` runs the CLI demo; `chat_app.py` is a Gradio chat UI.
+
+**Demo transcript** — the rewritten query is shown to prove this is memory, not topic overlap:
+
+> **User:** What do students say about Nat Tuck's teaching style?
+> **Assistant:** Mixed — some praise him for boiling lectures down to the core; others find him
+> unhelpful and unwilling to explain concepts from scratch. *(source: Tuck)*
+>
+> **User:** Is his workload heavy?
+> &nbsp;&nbsp;*(rewritten with memory → "Is **Nat Tuck's** workload heavy?")*
+> **Assistant:** Yes — "Lots of homework," and CS5335 homeworks "take well over 20 hours (sometimes
+> 30–40)." *(source: Tuck)*
+>
+> **User:** How does that compare to Derbinsky?
+> &nbsp;&nbsp;*(rewritten → "How does the workload in **Nat Tuck's** classes compare to **Derbinsky's**?")*
+> **Assistant:** Tuck's load is heavier (20–40h homeworks); Derbinsky's CS2500 has a lower difficulty
+> (3.0/5). *(sources: Tuck, Derbinsky)*
+
+Turn 2's "his" and turn 3's "that" are resolved to the professors named earlier — the response reflects
+the conversation, not a coincidental topic match. Grounding is preserved: the rewritten question still
+goes through the same retrieve-then-answer-from-context pipeline.
+
+---
+
 ## Pipeline / Files
 
 `ingest.py` (load + parse) → `chunk.py` (chunk) → `embed_store.py` (embed with all-MiniLM-L6-v2 + store
 in ChromaDB) → `retrieve.py` (semantic top-k) → `generate.py` (Groq, grounded) → `app.py` (Gradio UI).
-Stretch modules: `compare_chunking.py` (chunking comparison) and `hybrid.py` (BM25 + semantic). Each
-module runs standalone for inspection (e.g. `python chunk.py` prints chunk stats; `python retrieve.py`
-and `python hybrid.py` print retrieval for sample queries). See `planning.md` for the architecture diagram.
+Stretch modules: `compare_chunking.py` (chunking comparison), `hybrid.py` (BM25 + semantic), and
+`chat.py` / `chat_app.py` (conversational memory); metadata filtering lives in `retrieve.py` /
+`generate.py`. Each module runs standalone for inspection (e.g. `python chunk.py` prints chunk stats;
+`python retrieve.py` and `python hybrid.py` print retrieval for sample queries; `python chat.py` runs a
+multi-turn demo). See `planning.md` for the architecture diagram.
