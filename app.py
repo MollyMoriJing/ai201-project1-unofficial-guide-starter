@@ -17,10 +17,10 @@ EXAMPLES = [
 ]
 
 
-def handle_query(question: str):
+def handle_query(question: str, use_hybrid: bool = False):
     if not question or not question.strip():
         return "Please enter a question.", ""
-    result = ask(question)
+    result = ask(question, use_hybrid=use_hybrid)
     sources = "\n".join(f"• {s}" for s in result["sources"])
     if not sources:
         sources = "(no sources — this question is outside the scope of the reviews)"
@@ -35,13 +35,14 @@ with gr.Blocks(title="The Unofficial Guide — NEU CS Professors") as demo:
         "cover it, the system says so instead of guessing."
     )
     inp = gr.Textbox(label="Your question", placeholder="e.g. Which Fundies (CS2500) professor is rated highest?")
+    hybrid = gr.Checkbox(label="Use hybrid search (BM25 + semantic)", value=False)
     btn = gr.Button("Ask", variant="primary")
     answer = gr.Textbox(label="Answer", lines=6)
     sources = gr.Textbox(label="Retrieved from (sources)", lines=4)
     gr.Examples(EXAMPLES, inputs=inp)
 
-    btn.click(handle_query, inputs=inp, outputs=[answer, sources])
-    inp.submit(handle_query, inputs=inp, outputs=[answer, sources])
+    btn.click(handle_query, inputs=[inp, hybrid], outputs=[answer, sources])
+    inp.submit(handle_query, inputs=[inp, hybrid], outputs=[answer, sources])
 
 
 if __name__ == "__main__":

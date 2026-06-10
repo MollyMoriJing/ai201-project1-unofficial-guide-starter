@@ -368,9 +368,53 @@ planning.md, now confirmed with data. (Run `python compare_chunking.py` to repro
 
 ---
 
+## Stretch: Hybrid Search — BM25 + Semantic (+2)
+
+**Approach.** `hybrid.py` runs two retrievers over the same 71 chunks and fuses them:
+- **BM25** (lexical, via `rank_bm25`) — strong on exact tokens like surnames ("Ahmed") and course codes
+  ("CS3200").
+- **Semantic** (all-MiniLM-L6-v2 cosine) — strong on meaning without shared words.
+
+The two rankings are merged with **Reciprocal Rank Fusion**: each chunk scores
+`1/(60 + rank_semantic) + 1/(60 + rank_bm25)`, so a chunk that ranks well in *either* method rises — no
+score normalization needed. It's exposed as `ask(question, use_hybrid=True)` and a checkbox in the
+Gradio UI.
+
+**Comparison on 3 queries** (top-5 retrieved professors per method):
+
+| Query | Semantic | BM25 | Hybrid |
+|-------|----------|------|--------|
+| Q1 Fundies (Lerner/Derbinsky/Ahmed) | Lerner ×4, Derbinsky ×1 — **Ahmed absent** | Lerner ×2, Derbinsky ×1, **Ahmed ×2** | **Derbinsky ×2**, Lerner ×2, **Ahmed ×1** |
+| Q3 caring / good feedback | Rajaraman only #4; led by Hescott | **Rajaraman #1**, Derbinsky, +Choffnes ("good feedback" tag) | Derbinsky #1, **Rajaraman #2** |
+| Q4 CS3200 DB profs | Gatterbauer ×2, Fontenot ×3 | Gatterbauer ×3, Fontenot ×2 | Gatterbauer ×3, Fontenot ×2 |
+
+**Which performed better, and why.** **Hybrid was the best all-rounder.** On **Q1**, pure semantic search
+was dominated by Lerner's many praise-heavy reviews and dropped **Ahmed entirely** while burying the
+actually-highest-rated professor (Derbinsky) at rank 3; **BM25** recovered Ahmed via the exact surname
+token but didn't rank the best professor first; **hybrid** did both — it lifted Derbinsky to #1 *and*
+kept Ahmed in the top-5. On **Q3**, BM25's exact match on "affirming/caring" surfaced Rajaraman at #1
+(semantic had him at #4), though BM25 also pulled in Choffnes purely because a review carries the "Gives
+good feedback" tag; hybrid kept Rajaraman near the top without that noise. On **Q4** all three were
+comparable, because naming both professors already constrains retrieval well.
+
+**The payoff — hybrid fixes the documented Q1 failure case.** Same eval question, generation end-to-end:
+
+> **Semantic (default):** "Derbinsky has a perfect quality rating of 5.0/5... Lerner also received a
+> perfect quality rating of 5.0/5... **There is no information about a professor named Ahmed.**"
+> — *wrong: drops Ahmed, mis-ranks Lerner using per-review scores.*
+>
+> **Hybrid:** "Nathaniel Derbinsky has a perfect quality rating of 5.0/5... In contrast, **Benjamin
+> Lerner has an overall student rating of 3.6/5, and Amal Ahmed has a rating of 4.0/5.**"
+> — *correct three-way comparison with the right overall ratings.*
+
+Reproduce with `python hybrid.py` (retrieval comparison) or toggle the hybrid checkbox in `app.py`.
+
+---
+
 ## Pipeline / Files
 
 `ingest.py` (load + parse) → `chunk.py` (chunk) → `embed_store.py` (embed with all-MiniLM-L6-v2 + store
 in ChromaDB) → `retrieve.py` (semantic top-k) → `generate.py` (Groq, grounded) → `app.py` (Gradio UI).
-Each module runs standalone for inspection (e.g. `python chunk.py` prints chunk stats; `python
-retrieve.py` prints retrieval for sample queries). See `planning.md` for the architecture diagram.
+Stretch modules: `compare_chunking.py` (chunking comparison) and `hybrid.py` (BM25 + semantic). Each
+module runs standalone for inspection (e.g. `python chunk.py` prints chunk stats; `python retrieve.py`
+and `python hybrid.py` print retrieval for sample queries). See `planning.md` for the architecture diagram.

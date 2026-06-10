@@ -206,4 +206,8 @@ _(Update this section before starting any stretch feature.)_
   against a naive fixed-size (500-char / 50-overlap) splitter on the same 5 evaluation queries, measuring
   how many of each query's top-5 retrieved chunks come from the professor file that should answer it.
   Implemented in `compare_chunking.py`; results + analysis reported in the README.
-- Other candidates not done: Hybrid search (BM25 + semantic), metadata filtering, conversational memory.
+- **Hybrid Search (+2) — done (2026-06-10):** BM25 (lexical) fused with semantic search via Reciprocal
+  Rank Fusion in `hybrid.py`, exposed as a toggle in `generate.ask(use_hybrid=...)` and the Gradio UI.
+  Compared against BM25-only and semantic-only on 3 queries in the README; directly fixes the Q1 failure
+  (BM25 guarantees the exact surname "Ahmed" surfaces).
+- Other candidates not done: metadata filtering, conversational memory.

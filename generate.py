@@ -23,6 +23,7 @@ from dotenv import load_dotenv
 from groq import Groq
 
 from retrieve import retrieve
+from hybrid import hybrid_retrieve
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
 
@@ -76,12 +77,17 @@ def _client() -> Groq:
     return Groq(api_key=key)
 
 
-def ask(question: str, k: int = 5) -> dict:
-    """Return {answer, sources, chunks} for a user question, grounded in retrieved reviews."""
-    chunks = retrieve(question, k=k)
+def ask(question: str, k: int = 5, use_hybrid: bool = False) -> dict:
+    """Return {answer, sources, chunks} for a user question, grounded in retrieved reviews.
 
-    # Pipeline-level grounding: refuse before calling the LLM if nothing is close enough.
-    if not chunks or chunks[0]["distance"] > GATE_DISTANCE:
+    use_hybrid=True fuses BM25 + semantic search (stretch feature, see hybrid.py).
+    """
+    chunks = hybrid_retrieve(question, k=k) if use_hybrid else retrieve(question, k=k)
+
+    # Pipeline-level grounding: refuse before the LLM if even the closest chunk is too far.
+    # (min, not chunks[0], because hybrid ranking may not put the closest chunk first.)
+    best = min((c["distance"] for c in chunks), default=1.0)
+    if not chunks or best > GATE_DISTANCE:
         return {"answer": REFUSAL, "sources": [], "chunks": chunks}
 
     user_msg = (
