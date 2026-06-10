@@ -77,12 +77,17 @@ def _client() -> Groq:
     return Groq(api_key=key)
 
 
-def ask(question: str, k: int = 5, use_hybrid: bool = False) -> dict:
+def ask(question: str, k: int = 5, use_hybrid: bool = False, where: dict | None = None) -> dict:
     """Return {answer, sources, chunks} for a user question, grounded in retrieved reviews.
 
     use_hybrid=True fuses BM25 + semantic search (stretch feature, see hybrid.py).
+    where=... applies a ChromaDB metadata filter (stretch: metadata filtering) and
+    uses the semantic path (filtering is implemented there).
     """
-    chunks = hybrid_retrieve(question, k=k) if use_hybrid else retrieve(question, k=k)
+    if where:
+        chunks = retrieve(question, k=k, where=where)
+    else:
+        chunks = hybrid_retrieve(question, k=k) if use_hybrid else retrieve(question, k=k)
 
     # Pipeline-level grounding: refuse before the LLM if even the closest chunk is too far.
     # (min, not chunks[0], because hybrid ranking may not put the closest chunk first.)

@@ -411,6 +411,29 @@ Reproduce with `python hybrid.py` (retrieval comparison) or toggle the hybrid ch
 
 ---
 
+## Stretch: Metadata Filtering (+1)
+
+Every chunk stores flat metadata (`professor`, `course`, `quality`, `difficulty`, `chunk_type`,
+`source_file`, …), so retrieval takes an optional ChromaDB `where` filter — `retrieve(query, k,
+where=…)` and `ask(question, where=…)`. The Gradio UI exposes a **"Filter reviews by rating"** dropdown
+(All / positive ≥ 4 / critical ≤ 2).
+
+**Visible effect** — same query *"What is the teaching style and workload like?"*, top-5 retrieved:
+
+| Filter | Returned chunks (professor · rating) |
+|--------|--------------------------------------|
+| *none* | Lieberherr·1, Choffnes·5, Choffnes·5, Razzaq·2, Tuck·1 — **mixed** |
+| `professor == "Mark Fontenot"` | Fontenot·4, Fontenot·3, Fontenot·1, Fontenot·5, Fontenot·(summary) — **one professor** |
+| `quality >= 4` (positive only) | Choffnes·5, Choffnes·5, Annunziato·5, Tuck·4, Gatterbauer·5 — **all 4–5★** |
+| `chunk_type == review AND quality <= 2` (critical only) | Lieberherr·1, Razzaq·2, Tuck·1, Annunziato·1, Tuck·2 — **all 1–2★** |
+
+The filter visibly changes what comes back: restricting to one professor returns only their reviews,
+and the rating filters flip the *same* query between all-positive and all-critical reviews — handy for
+"what do happy students say vs. what do critics say." (When a filter is set the system uses the semantic
+path, where ChromaDB applies the `where` clause natively.)
+
+---
+
 ## Pipeline / Files
 
 `ingest.py` (load + parse) → `chunk.py` (chunk) → `embed_store.py` (embed with all-MiniLM-L6-v2 + store

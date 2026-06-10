@@ -210,4 +210,7 @@ _(Update this section before starting any stretch feature.)_
   Rank Fusion in `hybrid.py`, exposed as a toggle in `generate.ask(use_hybrid=...)` and the Gradio UI.
   Compared against BM25-only and semantic-only on 3 queries in the README; directly fixes the Q1 failure
   (BM25 guarantees the exact surname "Ahmed" surfaces).
-- Other candidates not done: metadata filtering, conversational memory.
+- **Metadata Filtering (+1) — done (2026-06-10):** `retrieve(query, where=...)` / `ask(where=...)` accept
+  a ChromaDB metadata filter (professor / quality / chunk_type); the Gradio UI exposes an "All / positive
+  ≥4 / critical ≤2" rating filter. README shows the same query returning different chunks per filter.
+- Other candidate not done: conversational memory.

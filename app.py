@@ -17,10 +17,18 @@ EXAMPLES = [
 ]
 
 
-def handle_query(question: str, use_hybrid: bool = False):
+# Stretch: metadata filtering — map a friendly label to a ChromaDB metadata filter.
+FILTERS = {
+    "All reviews": None,
+    "Only positive (rating ≥ 4)": {"quality": {"$gte": 4.0}},
+    "Only critical (rating ≤ 2)": {"$and": [{"chunk_type": "review"}, {"quality": {"$lte": 2.0}}]},
+}
+
+
+def handle_query(question: str, use_hybrid: bool = False, review_filter: str = "All reviews"):
     if not question or not question.strip():
         return "Please enter a question.", ""
-    result = ask(question, use_hybrid=use_hybrid)
+    result = ask(question, use_hybrid=use_hybrid, where=FILTERS.get(review_filter))
     sources = "\n".join(f"• {s}" for s in result["sources"])
     if not sources:
         sources = "(no sources — this question is outside the scope of the reviews)"
@@ -35,14 +43,17 @@ with gr.Blocks(title="The Unofficial Guide — NEU CS Professors") as demo:
         "cover it, the system says so instead of guessing."
     )
     inp = gr.Textbox(label="Your question", placeholder="e.g. Which Fundies (CS2500) professor is rated highest?")
-    hybrid = gr.Checkbox(label="Use hybrid search (BM25 + semantic)", value=False)
+    with gr.Row():
+        hybrid = gr.Checkbox(label="Use hybrid search (BM25 + semantic)", value=False)
+        review_filter = gr.Dropdown(list(FILTERS), value="All reviews", label="Filter reviews by rating")
     btn = gr.Button("Ask", variant="primary")
     answer = gr.Textbox(label="Answer", lines=6)
     sources = gr.Textbox(label="Retrieved from (sources)", lines=4)
     gr.Examples(EXAMPLES, inputs=inp)
 
-    btn.click(handle_query, inputs=[inp, hybrid], outputs=[answer, sources])
-    inp.submit(handle_query, inputs=[inp, hybrid], outputs=[answer, sources])
+    _inputs = [inp, hybrid, review_filter]
+    btn.click(handle_query, inputs=_inputs, outputs=[answer, sources])
+    inp.submit(handle_query, inputs=_inputs, outputs=[answer, sources])
 
 
 if __name__ == "__main__":

@@ -10,13 +10,19 @@ from __future__ import annotations
 from embed_store import embed, get_collection
 
 
-def retrieve(query: str, k: int = 5) -> list[dict]:
+def retrieve(query: str, k: int = 5, where: dict | None = None) -> list[dict]:
+    """Semantic top-k retrieval. `where` is an optional ChromaDB metadata filter,
+    e.g. {"professor": "Nathaniel Tuck"} or {"quality": {"$gte": 4.0}} (stretch:
+    metadata filtering)."""
     col = get_collection()
-    res = col.query(
+    kwargs = dict(
         query_embeddings=embed([query]),
         n_results=k,
         include=["documents", "metadatas", "distances"],
     )
+    if where:
+        kwargs["where"] = where
+    res = col.query(**kwargs)
     return [
         {"text": doc, "metadata": meta, "distance": dist}
         for doc, meta, dist in zip(
