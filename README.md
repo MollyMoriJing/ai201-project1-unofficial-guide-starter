@@ -6,9 +6,13 @@ and get an answer grounded *only* in actual RateMyProfessors reviews, with the s
 
 **Stack:** `all-MiniLM-L6-v2` (sentence-transformers) → ChromaDB → Groq `llama-3.3-70b-versatile` → Gradio.
 
-**▶️ Demo video:** [demo.mp4](demo.mp4) — 3–5 min walkthrough: three queries with source attribution, a
-query that retrieves well, the documented Q1 failure case **and its hybrid-search fix**, an out-of-scope
-refusal, metadata filtering, and conversational memory. *(Recording lives at the repo root as `demo.mp4`.)*
+**▶️ Demo video** — 3–5 min walkthrough: three queries with source attribution, a query that retrieves
+well, the documented Q1 failure case **and its hybrid-search fix**, an out-of-scope refusal, metadata
+filtering, and conversational memory.
+
+<video src="https://raw.githubusercontent.com/MollyMoriJing/ai201-project1-unofficial-guide-starter/main/demo.mp4" controls width="100%"></video>
+
+*If the player above doesn't load in your browser, [download/watch demo.mp4 directly](demo.mp4) (repo root).*
 
 **Run it:**
 ```bash
