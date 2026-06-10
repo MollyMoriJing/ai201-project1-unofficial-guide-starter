@@ -331,6 +331,43 @@ planning.md's Retrieval Approach to record this change.
 
 ---
 
+## Stretch: Chunking Strategy Comparison (+1)
+
+To validate the review-level chunking decision, I compared it head-to-head against a naive fixed-size
+splitter on the same five evaluation queries, with the same embedding model (`compare_chunking.py`,
+in-memory cosine retrieval so it doesn't touch the production index).
+
+- **Strategy A — review-level (this project):** one chunk per review, prefixed with
+  professor/course/scores, plus a per-professor summary chunk. **71 chunks.**
+- **Strategy B — naive fixed-size:** 500-character windows with 50-character overlap over each raw
+  document, ignoring review boundaries. **70 chunks.**
+
+**Metric:** each query has known professor file(s) that should answer it. I retrieve the top-5 chunks
+for each strategy and count how many come from an expected file (**hits@5**) and whether the #1 chunk
+does (**top-1**). Higher = retrieval surfaced the right professor.
+
+| Query | A hits@5 | A top-1 | B hits@5 | B top-1 |
+|-------|:---:|:---:|:---:|:---:|
+| Q1 Fundies trio (Lerner/Derbinsky/Ahmed) | 5/5 | ✓ lerner | 4/5 | ✓ derbinsky |
+| Q2 Tuck CS3650 | 4/5 | ✓ tuck | 2/5 | ✓ tuck |
+| Q3 caring / good feedback | 2/5 | ✓ rajaraman | 2/5 | ✗ razzaq |
+| Q4 CS3200 DB profs | 5/5 | ✓ gatterbauer | 5/5 | ✓ fontenot |
+| Q5 Lieberherr complaints | 3/5 | ✓ lieberherr | **0/5** | **✗ fontenot** |
+| **Total** | **19/25 (76%)** | **5/5** | **13/25 (52%)** | **3/5** |
+
+**Which performed better, and why:** Review-level chunking won — **76% vs 52% hits@5, and 5/5 vs 3/5
+top-1.** The decisive case is **Q5**: the fixed-size splitter scored **0/5** and its top result was a
+*Fontenot* chunk, not Lieberherr at all. The cause is structural — a professor's name appears only once
+per file (in the header), so once the file is sliced into 500-char windows, nearly every window is
+anonymous review text containing no "Lieberherr" / "CS1100" token; those windows match a query that
+names the professor poorly, and an unrelated chunk that merely shares words like "complaints" / "course"
+outranks them. **Q2** (Tuck 4/5 vs 2/5) and **Q3** (top-1 ✓ vs ✗, where B wrongly led with Razzaq) show
+the same effect more mildly. Review-level chunking avoids it because every chunk is prefixed with the
+professor and course, so entity queries reliably land on the right person — the exact reasoning in
+planning.md, now confirmed with data. (Run `python compare_chunking.py` to reproduce.)
+
+---
+
 ## Pipeline / Files
 
 `ingest.py` (load + parse) → `chunk.py` (chunk) → `embed_store.py` (embed with all-MiniLM-L6-v2 + store

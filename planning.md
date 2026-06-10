@@ -202,5 +202,8 @@ the system refuses instead of using general knowledge.
 ## Stretch Features Credit Log
 
 _(Update this section before starting any stretch feature.)_
-- None started yet. Candidate if time allows: **Hybrid search (BM25 + semantic)** — would likely help
-  the comparative/aggregate queries by catching exact tokens like course codes ("CS3200") and surnames.
+- **Chunking Strategy Comparison (+1) — done (2026-06-10):** compares the project's review-level chunking
+  against a naive fixed-size (500-char / 50-overlap) splitter on the same 5 evaluation queries, measuring
+  how many of each query's top-5 retrieved chunks come from the professor file that should answer it.
+  Implemented in `compare_chunking.py`; results + analysis reported in the README.
+- Other candidates not done: Hybrid search (BM25 + semantic), metadata filtering, conversational memory.
